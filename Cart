@@ -1,0 +1,209 @@
+id: oNvTQs9hH0WV5xWGQUARBQ
+projectId: gaFljj7WsUyWzw5t8FxMSg
+projectName: MIFX
+created: 2022-03-20T07:42:16.7466049Z
+protocol: 1
+tests:
+- id: o5pHt7CseEOLDbtXa6STZw
+  name: Cart
+  description: ''
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 0.1
+  creationDate: 2022-03-20T04:57:22.0000000
+  modificationDate: 2022-03-20T07:18:04.0000000
+  settings:
+    automationAssistant: true
+    appId: 91QK6RZpQkWGtQSiOf9H1w
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Failure
+  application:
+    id: 91QK6RZpQkWGtQSiOf9H1w
+    name: MIFX
+    url: http://automationpractice.com
+    platform: Web
+  steps:
+  - id: 3TsfbP34TEGkOrcUJsVUZg
+    comments: Navigates the specified URL (Auto-generated)
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 49c5d8d8-4ba8-42f0-823d-702e6acfb23a
+      source: System
+    parameterMaps:
+    - name: url
+      value: '{{ApplicationURL}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: BnMhwleWZEONbOc6gV_Lqw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Action
+    elementId: _aheZ6T4Kki3PFFCKK__5w
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 631118c0-4828-42c8-aa69-0e6107d5956d
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: IhRsb8leG0i32-tLydcxmw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 3
+    repeat: 1
+    type: Action
+    elementId: UMR0S1B_Wk-8zLgoSeLLTg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 9DA8xObBe0-HGFBrV3-ZKA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 4
+    repeat: 1
+    type: Action
+    elementId: RYRsZ9ZR1U-bC1DNHTpfFw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 85da72d0-c5a4-4587-be33-8cb3b5fa7910
+      source: System
+    parameterMaps:
+    - name: text
+      value: Product successfully added to your shopping cart
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: OGZXKRw50EqvFILaM1pYKw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 5
+    repeat: 1
+    type: Action
+    elementId: bO0w86AqFk6DmUTcw6FM_A
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  parameters:
+  - name: ApplicationURL
+    description: Auto generated application URL parameter
+    value: http://automationpractice.com
+    type: Input
+auxTests: []
+elements:
+- id: _aheZ6T4Kki3PFFCKK__5w
+  name: Faded Short Sleeve T-shirts
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTI
+    name: Image
+    source: System
+  locators:
+  - name: XPATH
+    value: //ul[1]/li[1]/div//img
+    priority: 0
+  - name: XPATH
+    value: /html/body/div/div[2]/div/div[2]/div/div[1]/ul[1]/li[1]/div/div[1]/div/a[1]/img
+    priority: 1
+- id: UMR0S1B_Wk-8zLgoSeLLTg
+  name: Add to cart
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjU
+    name: span
+    source: System
+  locators:
+  - name: XPATH
+    value: //ul[1]/li[1]//span[. = 'Add to cart']
+    priority: 0
+  - name: XPATH
+    value: //ul[1]/li[1]/div/div[2]/div[2]/a[1]/span
+    priority: 1
+  - name: XPATH
+    value: /html/body/div/div[2]/div/div[2]/div/div[1]/ul[1]/li[1]/div/div[2]/div[2]/a[1]/span
+    priority: 2
+- id: RYRsZ9ZR1U-bC1DNHTpfFw
+  name: Product successfully added to your sh...
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTA
+    name: Heading
+    source: System
+  locators:
+  - name: XPATH
+    value: >-
+      //h2[. = '
+      					Product successfully added to your shopping cart
+      				']
+    priority: 0
+  - name: XPATH
+    value: //div/div[1]/h2
+    priority: 1
+  - name: XPATH
+    value: /html/body/div/div[1]/header/div[3]/div/div/div[4]/div[1]/div[1]/h2
+    priority: 2
+- id: bO0w86AqFk6DmUTcw6FM_A
+  name: Close window
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjU
+    name: span
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[4]/div[1]/div/span
+    priority: 0
+  - name: XPATH
+    value: /html/body/div/div[1]/header/div[3]/div/div/div[4]/div[1]/div[1]/span
+    priority: 1
+projectParameters: []
+addons: []
